@@ -8,6 +8,7 @@ const pool = require('../modules/pool.js');
 
 router.get('/', (req, res) => {
     console.log("In GET request");
+    // console.log(req)
     let queryText = 'SELECT * from "people"';
 
     pool.query(queryText).then((result) => {
